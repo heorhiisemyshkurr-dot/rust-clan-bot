@@ -1,0 +1,446 @@
+{
+  "clanName": "LAB",
+  "clanTag": "LAB",
+  "prefixNickname": false,
+  "logoUrl": "",
+  "logoFile": "",
+  "bannerUrl": "",
+  "bannerFile": "assets/panel-banner.jpg",
+  "colors": {
+    "primary": "#CE422B",
+    "success": "#3BA55D",
+    "danger": "#ED4245",
+    "neutral": "#4F545C"
+  },
+  "ticketCategoryId": "1537391196492791810",
+  "archiveCategoryId": "",
+  "recruiterRoleId": "1536710079569600617",
+  "memberRoleId": "1537142805850226748",
+  "logChannelId": "",
+  "maxOpenPerUser": 1,
+  "deleteDelaySeconds": 10,
+  "panel": {
+    "title": "⚔️ {clan} — НАБІР ВІДКРИТО",
+    "color": "#5CE02A",
+    "description": "Командна гра, дисципліна та результат. Тисни кнопку нижче — відкриється приватний канал, який бачиш тільки ти та рекрутери.",
+    "sections": [
+      {
+        "title": "ЩО В НАС",
+        "emoji": "🛡️",
+        "items": [
+          "Лідер — 5000+ годин Rust",
+          "Колер — 15 000+ годин Rust",
+          "Сильний та зіграний склад",
+          "Командна гра, дисципліна та результат",
+          "Фармлять усі, окремої ролі «фармер» немає",
+          "Граємо Atlas / Vital"
+        ]
+      },
+      {
+        "title": "ВИМОГИ",
+        "emoji": "📋",
+        "items": [
+          "2000+ годин Rust",
+          "15+ років",
+          "35+ HELIS",
+          "8+ годин онлайну на день"
+        ]
+      },
+      {
+        "title": "НЕ ДОТЯГУЄШ ДО ВИМОГ?",
+        "emoji": "💬",
+        "text": "Якщо ти сильний гравець і можеш показати свій рівень — години та HELIS не є головним. В окремих випадках готові зробити виняток."
+      },
+      {
+        "title": "ХОЧЕШ У {clan}?",
+        "emoji": "⚔️",
+        "text": "Кидай тікет, проходь відбір і покажи, на що ти здатен."
+      }
+    ],
+    "footer": "{clan} • відповідь зазвичай протягом доби",
+    "textStyle": "bolditalic"
+  },
+  "forms": [
+    {
+      "id": "recruit",
+      "label": "ФОРМА ТІКЕТУ",
+      "emoji": "🪓",
+      "description": "Заявка на вступ до клану",
+      "channelPrefix": "заявка",
+      "pingRoleId": "",
+      "acceptRoleId": "",
+      "questions": [
+        {
+          "id": "name",
+          "label": "ЯК ТЕБЕ ЗВАТИ",
+          "style": "short",
+          "placeholder": "Імʼя або нік",
+          "required": true,
+          "maxLength": 100
+        },
+        {
+          "id": "hours_steam",
+          "label": "ТВОЇ ГОДИНИ + ПОСИЛАННЯ НА STEAM",
+          "style": "short",
+          "placeholder": "1500 год | steamcommunity.com/id/...",
+          "required": true,
+          "maxLength": 200
+        },
+        {
+          "id": "age",
+          "label": "СКІЛЬКИ ТОБІ РОКІВ",
+          "style": "short",
+          "placeholder": "18",
+          "required": true,
+          "maxLength": 3
+        },
+        {
+          "id": "online",
+          "label": "ТВІЙ ДЕННИЙ ОНЛАЙН",
+          "style": "short",
+          "placeholder": "4-6 годин, вечорами",
+          "required": true,
+          "maxLength": 120
+        },
+        {
+          "id": "role",
+          "label": "РОЛЬ ЯКУ ХОЧЕШ ОТРИМАТИ В КЛАНІ",
+          "style": "short",
+          "placeholder": "фармер / рейдер / будівельник",
+          "required": true,
+          "maxLength": 150
+        },
+        {
+          "id": "pc",
+          "label": "ТВІЙ ПК ВІДЕОКАРТА/ПРОЦЕСОР/ОПЕРАТИВКА",
+          "style": "paragraph",
+          "placeholder": "RTX 3060 / Ryzen 5 5600 / 16GB",
+          "required": true,
+          "maxLength": 400
+        }
+      ]
+    },
+    {
+      "id": "alliance",
+      "label": "Союз / альянс",
+      "emoji": "🤝",
+      "description": "Пропозиція від іншого клану",
+      "channelPrefix": "союз",
+      "pingRoleId": "",
+      "acceptRoleId": "",
+      "onPanel": true,
+      "questions": [
+        {
+          "id": "clan",
+          "label": "Назва клану та ваш тег",
+          "style": "short",
+          "required": true,
+          "maxLength": 100
+        },
+        {
+          "id": "size",
+          "label": "Скільки людей у складі",
+          "style": "short",
+          "placeholder": "8",
+          "required": true,
+          "maxLength": 6
+        },
+        {
+          "id": "server",
+          "label": "На яких серверах граєте",
+          "style": "short",
+          "placeholder": "Atlas / Vital",
+          "required": true,
+          "maxLength": 200
+        },
+        {
+          "id": "offer",
+          "label": "Що пропонуєте",
+          "style": "paragraph",
+          "required": true,
+          "maxLength": 900
+        }
+      ]
+    },
+    {
+      "id": "ads",
+      "label": "РЕКЛАМНА СПІВПРАЦЯ",
+      "emoji": "📣",
+      "description": "Пропозиція щодо реклами та піару",
+      "channelPrefix": "реклама",
+      "categoryId": "1536710080383426624",
+      "pingRoleId": "",
+      "acceptRoleId": "1536710079569600616",
+      "onPanel": false,
+      "questions": [
+        {
+          "id": "project",
+          "label": "ПРОЄКТ І ПОСИЛАННЯ",
+          "style": "short",
+          "placeholder": "Назва сервера/каналу + посилання",
+          "required": true,
+          "maxLength": 200
+        },
+        {
+          "id": "audience",
+          "label": "АУДИТОРІЯ: СКІЛЬКИ ЛЮДЕЙ",
+          "style": "short",
+          "placeholder": "1200 учасників, онлайн ~150",
+          "required": true,
+          "maxLength": 120
+        },
+        {
+          "id": "format",
+          "label": "ФОРМАТ РЕКЛАМИ",
+          "style": "short",
+          "placeholder": "Взаємопіар / пост / банер / відео",
+          "required": true,
+          "maxLength": 150
+        },
+        {
+          "id": "contact",
+          "label": "КОНТАКТ ДЛЯ ЗВʼЯЗКУ",
+          "style": "short",
+          "placeholder": "Discord: nick, Telegram: @nick",
+          "required": true,
+          "maxLength": 150
+        },
+        {
+          "id": "offer",
+          "label": "ДЕТАЛІ ПРОПОЗИЦІЇ",
+          "style": "paragraph",
+          "placeholder": "Що саме пропонуєте і що хочете натомість",
+          "required": true,
+          "maxLength": 900
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "title": "📜 ПРАВИЛА СЕРВЕРА",
+    "color": "#5CE02A",
+    "textStyle": "bolditalic",
+    "bannerFile": "assets/rules-banner.jpg",
+    "bannerUrl": "",
+    "description": "Ласкаво просимо! Щоб спілкування було комфортним для всіх, дотримуйтесь цих правил.",
+    "footer": "{clan} • незнання правил не звільняє від відповідальності",
+    "sections": [
+      {
+        "title": "1. Повага до учасників",
+        "emoji": "🤝",
+        "items": [
+          "Спілкуйтеся ввічливо.",
+          "Заборонені образи, приниження, булінг, дискримінація та токсична поведінка."
+        ]
+      },
+      {
+        "title": "2. Без спаму та флуду",
+        "emoji": "🚫",
+        "items": [
+          "Не надсилайте багато однакових повідомлень.",
+          "Не зловживайте CAPS LOCK, емодзі, GIF або згадками (@everyone, @here)."
+        ]
+      },
+      {
+        "title": "3. Реклама",
+        "emoji": "📢",
+        "items": [
+          "Будь-яка реклама серверів, сайтів, соцмереж чи послуг — лише з дозволу адміністрації.",
+          "Особисті повідомлення з рекламою учасникам заборонені."
+        ]
+      },
+      {
+        "title": "4. Контент",
+        "emoji": "🔞",
+        "items": [
+          "Заборонені NSFW, шок-контент, сцени насильства та незаконні матеріали.",
+          "Не публікуйте віруси, шкідливі файли або підозрілі посилання."
+        ]
+      },
+      {
+        "title": "5. Канали за призначенням",
+        "emoji": "🧭",
+        "items": [
+          "Пишіть у відповідні канали.",
+          "Офтоп допускається лише там, де це дозволено."
+        ]
+      },
+      {
+        "title": "6. Конфлікти",
+        "emoji": "⚡",
+        "items": [
+          "Не провокуйте сварки, політичні чи релігійні суперечки.",
+          "Якщо виникла проблема — зверніться до модерації."
+        ]
+      },
+      {
+        "title": "7. Профілі та ніки",
+        "emoji": "🪪",
+        "items": [
+          "Нікнейм і аватар не повинні містити образливого або неприйнятного контенту.",
+          "Заборонено видавати себе за адміністрацію, модераторів або інших користувачів."
+        ]
+      },
+      {
+        "title": "8. Голосові канали",
+        "emoji": "🎙️",
+        "items": [
+          "Не заважайте іншим шумом, музикою або сторонніми звуками.",
+          "Використовуйте push-to-talk, якщо у вас шумний мікрофон."
+        ]
+      },
+      {
+        "title": "9. Правила Discord",
+        "emoji": "📘",
+        "items": [
+          "Усі учасники повинні дотримуватися Discord Terms of Service та Community Guidelines."
+        ]
+      },
+      {
+        "title": "10. Модерація",
+        "emoji": "🛡️",
+        "items": [
+          "Виконуйте прохання адміністрації та модераторів.",
+          "Обговорення покарань — лише в приватних повідомленнях з модерацією."
+        ]
+      },
+      {
+        "title": "ПОКАРАННЯ",
+        "emoji": "⚠️",
+        "text": "Залежно від порушення можуть застосовуватися:"
+      },
+      {
+        "title": "Види покарань",
+        "emoji": "⛔",
+        "items": [
+          "попередження",
+          "мут",
+          "тимчасовий кік",
+          "тимчасовий бан",
+          "постійний бан"
+        ]
+      },
+      {
+        "title": "Рішення адміністрації",
+        "emoji": "⚖️",
+        "text": "Адміністрація залишає за собою право приймати остаточне рішення щодо порушень."
+      }
+    ]
+  },
+  "presence": {
+    "roleId": "1537142805850226748",
+    "guildId": "",
+    "activityType": "Watching",
+    "template": "MAIN TEAM: {count}",
+    "descriptionTemplate": "Набір у {clan} відкрито. Зараз у складі MAIN TEAM: {count}.\nТікети, правила та партнерство — кнопками на сервері.\n\nЗамовити повне оформлення Discord можна в особисті: b0b_fullstackdev",
+    "updateDescription": true,
+    "intervalMinutes": 15,
+    "descriptionFallback": "Набір у {clan} відкрито.\nТікети, правила та партнерство — кнопками на сервері.\n\nЗамовити повне оформлення Discord можна в особисті: b0b_fullstackdev"
+  },
+  "partners": {
+    "title": "🤝 ПАРТНЕРСЬКА ПРОГРАМА",
+    "color": "#5CE02A",
+    "textStyle": "bolditalic",
+    "bannerFile": "assets/partners-banner.jpg",
+    "bannerUrl": "",
+    "description": "МИ ВІДКРИТІ ДО ПАРТНЕРСТВА!",
+    "formId": "ads",
+    "showFormButton": true,
+    "footer": "{clan} • партнерство",
+    "sections": [
+      {
+        "title": "ЩОДО ПАРТНЕРСТВА ПИШІТЬ",
+        "emoji": "✉️",
+        "text": "<@626074932140310537> · @b0b_fullstackdev\n<@1232023257784389682> · @.log1ka_\nУсі питання щодо реклами та партнерства — в особисті до будь-кого з нас."
+      },
+      {
+        "title": "АБО ЗАЛИШ ЗАЯВКУ",
+        "emoji": "📣",
+        "text": "Тисни кнопку нижче — відкриється приватний канал, де можна обговорити умови реклами та взаємопіару."
+      }
+    ],
+    "contactUserIds": [
+      "626074932140310537",
+      "1232023257784389682"
+    ]
+  },
+  "feeds": [
+    {
+      "id": "tiktok",
+      "url": "",
+      "channelId": "1537141628991447040",
+      "mention": "@everyone",
+      "template": "{mention}\n🎬 **НОВЕ ВІДЕО НА TIKTOK!**\n{link}",
+      "intervalMinutes": 10,
+      "maxPerCheck": 3
+    }
+  ],
+  "autoRole": {
+    "roleId": "1536710079569600613",
+    "skipBots": true,
+    "guildId": ""
+  },
+  "announcements": {
+    "farm": {
+      "color": "#5CE02A",
+      "textStyle": "bolditalic",
+      "bannerFile": "",
+      "bannerUrl": "",
+      "title": "⛏️ ПОТРІБНІ ФАРМІЛИ",
+      "description": "Клан шукає професійних фармил. Для них умови легші.",
+      "footer": "{clan} • набір фармил",
+      "sections": [
+        {
+          "title": "УМОВИ ДЛЯ ФАРМИЛ",
+          "emoji": "📋",
+          "items": [
+            "Від 1000 годин Rust",
+            "HELIS та решта вимог не обовʼязкові",
+            "Стабільний онлайн щодня",
+            "Готовність тягнути ресурс на клан"
+          ]
+        },
+        {
+          "title": "ЯК ПОТРАПИТИ",
+          "emoji": "✉️",
+          "text": "Пиши напряму складу клану або лідеру — окремий тікет для цього не потрібен."
+        }
+      ]
+    },
+    "electric": {
+      "color": "#5CE02A",
+      "textStyle": "bolditalic",
+      "bannerFile": "",
+      "bannerUrl": "",
+      "title": "⚡ ПОТРІБЕН ЕЛЕКТРИК",
+      "description": "Клан шукає електрика. Для нього умови легші.",
+      "footer": "{clan} • набір електрика",
+      "sections": [
+        {
+          "title": "ЩО ТРЕБА ВМІТИ",
+          "emoji": "🔌",
+          "items": [
+            "Збирати схеми з нуля: турелі, світло, двері",
+            "Сортувалки та автоматичні ферми",
+            "Рахувати споживання і резерв батарей",
+            "Розуміти, як не спалити базу на вайпі"
+          ]
+        },
+        {
+          "title": "УМОВИ",
+          "emoji": "📋",
+          "items": [
+            "Від 1000 годин Rust",
+            "HELIS не обовʼязкові",
+            "Стабільний онлайн щодня"
+          ]
+        },
+        {
+          "title": "ЯК ПОТРАПИТИ",
+          "emoji": "✉️",
+          "text": "Пиши напряму складу клану або лідеру — окремий тікет для цього не потрібен."
+        }
+      ]
+    }
+  }
+}
